@@ -19,7 +19,7 @@
                         <p class="card-item"> {{deportista.telefono}} </p>
 
                         <span class="card-description card-color-1">Fecha de Nacimiento</span>
-                        <p class="card-item"> {{deportista.fechaN | date : format : timezone }} </p>
+                        <p class="card-item"> {{deportista.fechaN | date }} </p>
 
                         <div class="row">
                             <div class="col-md-4">
@@ -113,8 +113,7 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary" [hidden]='btnDisabled'
-                                    [disabled]='form.invalid'>Guardar<div class="loader"></div></button>
+                                <button type="submit" class="btn btn-primary" [disabled]='form.invalid'>Guardar<div class="loader"></div></button>
                             </div>
                         </form>
                     </div>

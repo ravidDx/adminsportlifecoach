@@ -3,6 +3,7 @@ import {PlanEntrenamientoService} from '../../services/plan-entrenamiento.servic
 import {ActivatedRoute, Router} from '@angular/router';
 
 import {PlanEntrenamiento} from '../../interfaces/planEntrenamiento.interface';
+
 import { Validators } from '@angular/forms';
 
 
@@ -15,6 +16,11 @@ export class EntrenamientoComponent implements OnInit {
 
   imagenes:any = [];
   cargar:boolean=false;
+
+
+  nombre:any = '';
+  apellido:any = '';
+  objetivo:any = '';
 
   planEntrenamiento:PlanEntrenamiento = {
     deportista:{},
@@ -84,6 +90,9 @@ export class EntrenamientoComponent implements OnInit {
             this.planEntrenamiento=data;
 
             this.estado = this.planEntrenamiento.estado;
+            this.nombre = this.planEntrenamiento.deportista['nombre'];
+            this.apellido = this.planEntrenamiento.deportista['apellido'];
+            this.objetivo = this.planEntrenamiento.deportista['objetivo'];
             this.listSemanas = [];
 
             this.planEntrenamiento.progreso =  parseFloat(this.planEntrenamiento.progreso).toFixed(2)
