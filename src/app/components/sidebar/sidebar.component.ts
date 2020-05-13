@@ -74,7 +74,7 @@ export class SidebarComponent implements OnInit {
       
     }else{
       this.name='Super Admin'
-      this.about.imagen="/assets/images/logo-black.png";
+      this.about.imagen="assets/images/icon.png";
     }
 
     
