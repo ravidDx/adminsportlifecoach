@@ -44180,7 +44180,7 @@ var ServicesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"card\">\r\n          <div class=\"card-header card-header-primary\">\r\n            <h4 class=\"card-title \">Inicio</h4>\r\n          </div>\r\n          <div class=\"card-body\">\r\n\r\n            <div class=\"card mb-3\" *ngFor=\"let element of sliderList; let i=index\">\r\n              <div class=\"row no-gutters\">\r\n                <div class=\"col-md-4\">\r\n                  <img [src]=\"element.imagen\" class=\"card-img\" alt=\"element {{i+1}}\">\r\n                </div>\r\n                <div class=\"col-md-8\">\r\n                  <div class=\"card-body\">\r\n\r\n                    <p>Slider {{i+1}}</p>\r\n\r\n                    <h5 class=\"card-title\">{{element.titulo}}</h5>\r\n                    <p class=\"card-text\">{{element.detalle}}</p>\r\n                    <hr>\r\n\r\n                    <p class=\"card-text\"><a href=\"#\" class=\"btn btn-primary\" (click)=\"editModal(element)\"\r\n                        data-toggle=\"modal\" data-target=\"#dataModal\"><i class=\"fas fa-edit\"></i> Editar</a></p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- FORMULARIO MODAL -->\r\n<div class=\"modal fade\" id=\"dataModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\" id=\"exampleModalLabel\">\r\n          <span><i class=\"fas fa-edit\"></i> Actualizar Slider</span>\r\n        </h5>\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <form id=\"form-entrenamiento\" (ngSubmit)=\"updateSlider()\" #form=\"ngForm\">\r\n        <div class=\"modal-body\">\r\n\r\n\r\n          <div class=\"example-container\">\r\n\r\n            <div class=\"row\">\r\n              <div class=\"col-md-12\">\r\n                <mat-form-field>\r\n                  <input matInput placeholder=\"Titulo\" type=\"text\" name=\"titulo\" [(ngModel)]=\"slider.titulo\"\r\n                    #title=\"ngModel\" required maxlength=\"50\" #sms>\r\n                  <mat-hint align=\"end\">{{sms.value?.length || 0}}/50</mat-hint>\r\n                  <!--MSJ ERROR TITULO-->\r\n                  <mat-error *ngIf=\"title.errors && (title.dirty || title.touched)\">\r\n                    <span *ngIf=\"title.errors.required\">Este campo no puede estar vacío</span>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"row\">\r\n              <div class=\"col-md-12\">\r\n                <mat-form-field>\r\n                  <textarea matInput placeholder=\"Detalle\" rows=\"3\" name=\"detalle\" [(ngModel)]=\"slider.detalle\"\r\n                    #detail=\"ngModel\" required maxlength=\"256\" #msj></textarea>\r\n                  <mat-hint align=\"end\">{{msj.value?.length || 0}}/50</mat-hint>\r\n                  <!--MSJ ERROR TITULO-->\r\n                  <mat-error *ngIf=\"detail.errors && (detail.dirty || detail.touched)\">\r\n                    <span *ngIf=\"detail.errors.required\">Este campo no puede estar vacío</span>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"row\">\r\n              <div class=\"col-md-12\">\r\n                <button mat-button color=\"warn\" (click)=\"onClick()\" type=\"button\">\r\n                  <mat-icon>file_upload</mat-icon>\r\n                  {{text}} (.jpg .gif o .png)\r\n                  <p class='file_p'>tamaño máx. (5MB)</p>\r\n                </button>\r\n                <br />\r\n                <ul>\r\n                  <li *ngFor=\"let file of files\" [@fadeInOut]=\"file.state\">\r\n                    <mat-progress-bar [value]=\"file.progress\"></mat-progress-bar>\r\n                    <span id=\"file-label\">\r\n                      {{file.data.name}}\r\n                      <a title=\"Retry\" (click)=\"retryFile(file)\" *ngIf=\"file.canRetry\">\r\n                        <mat-icon>refresh</mat-icon>\r\n                      </a>\r\n                      <a title=\"Cancel\" (click)=\"cancelFile(file)\" *ngIf=\"file.canCancel\">\r\n                        <mat-icon>cancel</mat-icon>\r\n                      </a>\r\n                    </span>\r\n                  </li>\r\n                </ul>\r\n                <input type=\"file\" id=\"fileUpload\" name=\"fileUpload\" multiple=\"multiple\" accept=\"{{accept}}\"\r\n                  style=\"display:none;\" />\r\n\r\n              </div>\r\n            </div>\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n\r\n        <div class=\"modal-footer\">\r\n\r\n          <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Cerrar</button>\r\n          <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"form.invalid\">Actualizar</button>\r\n\r\n        </div>\r\n      </form>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"card\">\r\n          <div class=\"card-header card-header-primary\">\r\n            <h4 class=\"card-title \">Inicio</h4>\r\n          </div>\r\n          <div class=\"card-body\">\r\n\r\n            <div class=\"card mb-3\" *ngFor=\"let element of sliderList; let i=index\">\r\n              <div class=\"row no-gutters\">\r\n                <div class=\"col-md-4\">\r\n                  <img [src]=\"element.imagen\" class=\"card-img\" alt=\"element {{i+1}}\">\r\n                </div>\r\n                <div class=\"col-md-8\">\r\n                  <div class=\"card-body\">\r\n\r\n                    <p>Slider {{i+1}}</p>\r\n\r\n                    <h5 class=\"card-title\">{{element.titulo}}</h5>\r\n                    <p class=\"card-text\">{{element.detalle}}</p>\r\n                    <hr>\r\n\r\n                    <p class=\"card-text\"><a href=\"#\" class=\"btn btn-primary\" (click)=\"editModal(element)\"\r\n                        data-toggle=\"modal\" data-target=\"#dataModal\"><i class=\"fas fa-edit\"></i> Editar</a></p>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<!-- FORMULARIO MODAL -->\r\n<div class=\"modal fade\" id=\"dataModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\"\r\n  aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <h5 class=\"modal-title\" id=\"exampleModalLabel\">\r\n          <span><i class=\"fas fa-edit\"></i> Actualizar Slider</span>\r\n        </h5>\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n      </div>\r\n      <form id=\"form-entrenamiento\" (ngSubmit)=\"updateSlider()\" #form=\"ngForm\">\r\n        <div class=\"modal-body\">\r\n\r\n\r\n          <div class=\"example-container\">\r\n\r\n            <div class=\"row\">\r\n              <div class=\"col-md-12\">\r\n                <mat-form-field>\r\n                  <input matInput placeholder=\"Titulo\" type=\"text\" name=\"titulo\" [(ngModel)]=\"slider.titulo\"\r\n                    #title=\"ngModel\" required maxlength=\"50\" #sms>\r\n                  <mat-hint align=\"end\">{{sms.value?.length || 0}}/50</mat-hint>\r\n                  <!--MSJ ERROR TITULO-->\r\n                  <mat-error *ngIf=\"title.errors && (title.dirty || title.touched)\">\r\n                    <span *ngIf=\"title.errors.required\">Este campo no puede estar vacío</span>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"row\">\r\n              <div class=\"col-md-12\">\r\n                <mat-form-field>\r\n                  <textarea matInput placeholder=\"Detalle\" rows=\"3\" name=\"detalle\" [(ngModel)]=\"slider.detalle\"\r\n                    #detail=\"ngModel\" required maxlength=\"256\" #msj></textarea>\r\n                  <mat-hint align=\"end\">{{msj.value?.length || 0}}/50</mat-hint>\r\n                  <!--MSJ ERROR TITULO-->\r\n                  <mat-error *ngIf=\"detail.errors && (detail.dirty || detail.touched)\">\r\n                    <span *ngIf=\"detail.errors.required\">Este campo no puede estar vacío</span>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </div>\r\n            </div>\r\n\r\n\r\n   \r\n\r\n\r\n            <div class=\"row\">\r\n\r\n              <div class=\"col-md-12\" style=\"text-align: center;\">\r\n\r\n              \r\n                  <img [src]=\"slider.imagen\" class=\"card-img-modal\"  />\r\n\r\n                  \r\n                <br/>\r\n\r\n                <button mat-button color=\"warn\" (click)=\"onClick()\" type=\"button\" >\r\n                  <mat-icon>file_upload</mat-icon>\r\n                  Actualizar imagen (.jpg o .png)\r\n                  <p class='file_p' >tamaño máx. (1MB)</p>  \r\n                </button>\r\n\r\n\r\n\r\n                <input type=\"file\" id=\"fileUpload\" name=\"fileUpload\" multiple=\"multiple\"\r\n                  accept=\"{{accept}}\" style=\"display:none;\" (change)=\"onSelectFile($event)\" />\r\n               \r\n\r\n              </div>\r\n\r\n          </div>\r\n\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n\r\n        <div class=\"modal-footer\">\r\n\r\n          <button type=\"button\" class=\"btn btn-danger\" data-dismiss=\"modal\">Cerrar</button>\r\n          <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"form.invalid\" [disabled]='btnUpdate' >Actualizar</button>\r\n\r\n        </div>\r\n      </form>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -44247,13 +44247,21 @@ var SlidersComponent = /** @class */ (function () {
         /** Allow you to add handler after its completion. Bubble up response text from remote. */
         this.complete = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.files = [];
+        /*................................................................*/
+        this.new = true;
         this.btnUpdate = false;
         this.slider = {
+            imagen: 'assets/images/foto.png',
+            titulo: '',
+            detalle: ''
+        };
+        this.sliderEdit = {
             imagen: '',
             titulo: '',
             detalle: ''
         };
         this.sliderList = [];
+        this.selectedFile = null;
         this.getSliders();
     }
     SlidersComponent.prototype.ngOnInit = function () {
@@ -44275,24 +44283,32 @@ var SlidersComponent = /** @class */ (function () {
     SlidersComponent.prototype.editModal = function (slider) {
         this.clearForm();
         this.slider = slider;
+        this.sliderEdit = slider;
+        this.new = false;
+        this.btnUpdate = false;
     };
     SlidersComponent.prototype.updateSlider = function () {
         var _this = this;
+        console.log('update');
         this.btnUpdate = true;
         var idSlider = this.slider['id'];
         //delete this.slider['id'];
         if (this.files.length != 0) {
             var idImg_1 = Math.random().toString(36).substring(2);
+            console.log(this.files);
             this._onepageService.onUpload(this.files[0].data, idImg_1)
                 .subscribe(function (data) {
+                console.log('iff ');
+                console.log(data);
                 if (data.metadata != null) {
+                    console.log('por aqua metadata ');
                     _this._onepageService.downloadUrl(idImg_1).subscribe(function (data) {
+                        console.log('por aqua data');
                         _this.slider.imagen = data;
                         _this._onepageService.updateSilder(_this.slider, idSlider)
                             .subscribe(function (data) {
                             _this._toasterService.Success('Slider actualizado OK !!');
                             _this.closeModal();
-                            _this.btnUpdate = false;
                         }, function (error) {
                             console.log(error);
                             _this._toasterService.Error('Error al actualizar !!');
@@ -44305,12 +44321,14 @@ var SlidersComponent = /** @class */ (function () {
                     });
                 }
             }, function (error) {
+                console.log('por aqua error');
                 console.log(error);
                 _this.btnUpdate = false;
                 _this._toasterService.Error('Error al actualizar !!');
             });
         }
         else {
+            console.log('por aqui');
             this._onepageService.updateSilder(this.slider, idSlider)
                 .subscribe(function (data) {
                 _this._toasterService.Success('Slider actualizado OK !!');
@@ -44344,7 +44362,7 @@ var SlidersComponent = /** @class */ (function () {
         fileUpload.onchange = function () {
             var typeFile = fileUpload.files[0].type;
             var sizeFile = fileUpload.files[0].size;
-            if (typeFile === 'image/gif' || typeFile === 'image/jpeg' || typeFile === 'image/png') {
+            if (typeFile === 'image/jpeg' || typeFile === 'image/png') {
                 if (sizeFile <= 5242880) {
                     for (var index = 0; index < fileUpload.files.length; index++) {
                         var file = fileUpload.files[index];
@@ -44375,6 +44393,7 @@ var SlidersComponent = /** @class */ (function () {
         var _this = this;
         var fd = new FormData();
         fd.append(this.param, file.data);
+        console.log(file.data);
         var req = new _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpRequest"]('POST', this.target, fd, {
             reportProgress: true
         });
@@ -44418,6 +44437,27 @@ var SlidersComponent = /** @class */ (function () {
             this.files.splice(index, 1);
         }
         console.log(this.files);
+    };
+    SlidersComponent.prototype.onSelectFile = function (event) {
+        var _this = this;
+        var typeFile = event.target.files[0].type;
+        var sizeFile = event.target.files[0].size;
+        if (typeFile === 'image/jpeg' || typeFile === 'image/png') {
+            console.log('img');
+            if (sizeFile <= 1048576) {
+                if (event.target.files && event.target.files[0]) {
+                    var reader = new FileReader();
+                    this.imagePath = event.target.files;
+                    reader.readAsDataURL(event.target.files[0]); // read file as data url
+                    reader.onload = function (event) {
+                        _this.sliderEdit.imagen = (reader.result) + ''; //add source to image
+                    };
+                }
+            }
+            else {
+                this._toasterService.Error('La imagen sobrepasa el tamaño maximo !!');
+            }
+        }
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
