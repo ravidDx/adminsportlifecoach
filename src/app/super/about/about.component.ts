@@ -183,7 +183,7 @@ export class AboutComponent implements OnInit {
       let typeFile = fileUpload.files[0].type; 
       let sizeFile = fileUpload.files[0].size;
     
-      if(typeFile === 'image/gif' || typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+      if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
         
         if(sizeFile <= 5242880){
       
@@ -281,6 +281,40 @@ export class AboutComponent implements OnInit {
       this.files.splice(index, 1);
     }
     console.log(this.files);
+  }
+
+  public imagePath:any;
+
+  onSelectFile(event:any) { // called each time file input changes
+    
+    let typeFile = event.target.files[0].type;
+    let sizeFile = event.target.files[0].size;
+
+
+
+    if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+      console.log('img')
+      if(sizeFile <= 1048576){
+  
+        if (event.target.files && event.target.files[0]) {
+          var reader = new FileReader();
+          this.imagePath = event.target.files;
+          reader.readAsDataURL(event.target.files[0]); // read file as data url
+          reader.onload = (event) => { // called once readAsDataURL is completed
+      
+              this.about.imagen  = (reader.result)+''; //add source to image
+          }
+        }
+
+      }else{
+
+        this.toasterService.Error('La imagen sobrepasa el tamaño maximo !!');
+      }
+
+
+
+    }
+
   }
 
 

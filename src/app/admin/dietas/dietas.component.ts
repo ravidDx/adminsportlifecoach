@@ -72,6 +72,7 @@ export class DietasComponent implements OnInit {
     imagen: 'assets/images/foto.png',
     estado: ''
   }
+  
 
   dietaEdit: Dieta = {
     tipo: "",

@@ -95,6 +95,10 @@ export class PortafolioComponent implements OnInit {
   editModal(portafolio:Portafolio){
     //this.clearForm();
     this.portafolio=portafolio;    
+    this.btnUpdate = false;
+    console.log('entro a edit modal')
+    console.log(this.btnUpdate)
+    console.log('--------')
   }
 
 
@@ -203,7 +207,7 @@ export class PortafolioComponent implements OnInit {
       let typeFile = fileUpload.files[0].type; 
       let sizeFile = fileUpload.files[0].size;
     
-      if(typeFile === 'image/gif' || typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+      if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
         
         if(sizeFile <= 5242880){
       
@@ -307,5 +311,41 @@ export class PortafolioComponent implements OnInit {
       
     //this._entrenamientoService.onUpload(file.data);
   }
+
+
+  public imagePath:any;
+      
+  onSelectFile(event:any) { // called each time file input changes
+    
+    let typeFile = event.target.files[0].type;
+    let sizeFile = event.target.files[0].size;
+
+
+
+    if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+      console.log('img')
+      if(sizeFile <= 1048576){
+  
+        if (event.target.files && event.target.files[0]) {
+          var reader = new FileReader();
+          this.imagePath = event.target.files;
+          reader.readAsDataURL(event.target.files[0]); // read file as data url
+          reader.onload = (event) => { // called once readAsDataURL is completed
+      
+              this.portafolio.imagen  = (reader.result)+''; //add source to image
+          }
+        }
+
+      }else{
+
+        this.toasterService.Error('La imagen sobrepasa el tamaño maximo !!');
+      }
+
+
+
+    }
+
+  }
+
 
 }

@@ -109,32 +109,33 @@
                         </div>
                     </div>
 
+
                     <div class="row">
-                      <div class="col-md-12">
-                        <button mat-button color="warn" (click)="onClick()" type="button">
+
+                      <div class="col-md-12" style="text-align: center;">
+        
+                      
+                          <img [src]="about.imagen" class="card-img-modal" style="width: 175px" />
+        
+                          
+                        <br/>
+        
+                        <button mat-button color="warn" (click)="onClick()" type="button" >
                           <mat-icon>file_upload</mat-icon>
-                          {{text}} (.jpg .gif o .png)
-                          <p class='file_p'>tamaño máx. (5MB)</p>
+                          Actualizar imagen (.jpg o .png)
+                          <p class='file_p' >tamaño máx. (1MB)</p>  
                         </button>
-                            <br/>
-                            <ul>
-                              <li *ngFor="let file of files" [@fadeInOut]="file.state">
-                                <mat-progress-bar [value]="file.progress"></mat-progress-bar>
-                                <span id="file-label">
-                                  {{file.data.name}}
-                                  <a title="Retry" (click)="retryFile(file)" *ngIf="file.canRetry">
-                                    <mat-icon>refresh</mat-icon>
-                                  </a>
-                                  <a title="Cancel" (click)="cancelFile(file)" *ngIf="file.canCancel">
-                                    <mat-icon>cancel</mat-icon>
-                                  </a>
-                                </span>
-                              </li>
-                            </ul>
-                            <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;" />
-                            
+        
+        
+        
+                        <input type="file" id="fileUpload" name="fileUpload" multiple="multiple"
+                          accept="{{accept}}" style="display:none;" (change)="onSelectFile($event)" />
+                       
+        
                       </div>
-                    </div>
+        
+                  </div>
+
    
                     
                 </div>
@@ -144,7 +145,7 @@
             <div class="modal-footer">
                 
               <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-              <button type="submit" class="btn btn-primary" [disabled]="form.invalid" >Actualizar</button>
+              <button type="submit" class="btn btn-primary" [disabled]="form.invalid" [disabled]='btnUpdate' >Actualizar</button>
               
                 
             </div>

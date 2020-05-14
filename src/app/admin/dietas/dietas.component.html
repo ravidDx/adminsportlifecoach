@@ -334,13 +334,14 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
           <button *ngIf="new == true" type="submit" class="btn btn-primary" >Guardar</button>
-          <button *ngIf="new == false" type="submit" class="btn btn-primary" [disabled]=btnSave>Editar</button>
+          <button *ngIf="new == false" type="submit" class="btn btn-primary" [disabled]='btnSave'>Editar</button>
 
         </div>
       </form>
     </div>
   </div>
 </div>
+
 
 
 
