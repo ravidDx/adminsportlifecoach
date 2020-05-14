@@ -45,9 +45,16 @@ export class SlidersComponent implements OnInit {
   files: Array<FileUploadModel> = [];
 
   /*................................................................*/
-  new:boolean;
+
+  new: boolean = true;
   btnUpdate:boolean = false;
   slider:Slider={
+    imagen:'assets/images/foto.png',
+    titulo:'',
+    detalle:''
+  }
+
+  sliderEdit:Slider={
     imagen:'',
     titulo:'',
     detalle:''
@@ -84,28 +91,42 @@ export class SlidersComponent implements OnInit {
 
   editModal(slider:Slider){
     this.clearForm();
-    this.slider=slider;    
+    this.slider=slider; 
+    this.sliderEdit=slider; 
+    
+    this.new = false;
+    this.btnUpdate=false;
+    
   }
 
   updateSlider(){
+    console.log('update')
     this.btnUpdate=true;
     var idSlider = this.slider['id'];
     //delete this.slider['id'];
+
     if(this.files.length!=0){
+      
        const idImg = Math.random().toString(36).substring(2);
+       console.log(this.files)
         this._onepageService.onUpload(this.files[0].data,idImg)      
         .subscribe(
           data=>{
+            console.log('iff ')  
+            console.log(data)
             if(data.metadata!=null){
+              console.log('por aqua metadata ')  
               this._onepageService.downloadUrl(idImg).subscribe(
                 data=>{
+                  console.log('por aqua data')  
                    this.slider.imagen=data;
                    this._onepageService.updateSilder(this.slider,idSlider)
                    .subscribe(
                      data=>{
                        this._toasterService.Success('Slider actualizado OK !!');
                        this.closeModal();
-                       this.btnUpdate=false;
+                       
+                       
                      },
                      error=>{
                        console.log(error);
@@ -128,6 +149,7 @@ export class SlidersComponent implements OnInit {
             
           },
           error=>{
+            console.log('por aqua error')   
             console.log(error);
             this.btnUpdate=false;
             this._toasterService.Error('Error al actualizar !!');
@@ -135,7 +157,8 @@ export class SlidersComponent implements OnInit {
 
         );
         
-    }else{      
+    }else{   
+      console.log('por aqui')   
       this._onepageService.updateSilder(this.slider,idSlider)
         .subscribe(
           data=>{
@@ -185,20 +208,20 @@ export class SlidersComponent implements OnInit {
       let typeFile = fileUpload.files[0].type; 
       let sizeFile = fileUpload.files[0].size;
     
-      if(typeFile === 'image/gif' || typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
-        
+      if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+   
         if(sizeFile <= 5242880){
-      
+        
           for (let index = 0; index < fileUpload.files.length; index++) {
             const file = fileUpload.files[index];
-        
-            
+
             this.files[0]={ data: file, state: 'in', inProgress: false, progress: 0, canRetry: false, canCancel: true };
           }
           this.uploadFiles();
         }
 
       }else{
+    
         this._toasterService.Error('Tipo de archivo no valido!!');
       }
       
@@ -221,9 +244,11 @@ export class SlidersComponent implements OnInit {
   }
 
   private uploadFile(file: FileUploadModel) {
-  
+     
     const fd = new FormData();
     fd.append(this.param, file.data);
+
+    console.log(file.data)
 
     const req = new HttpRequest('POST', this.target, fd, {
       reportProgress: true
@@ -284,6 +309,43 @@ export class SlidersComponent implements OnInit {
     }
     console.log(this.files);
   }
+
+
+  public imagePath:any;
+      
+  onSelectFile(event:any) { // called each time file input changes
+    
+    let typeFile = event.target.files[0].type;
+    let sizeFile = event.target.files[0].size;
+
+
+
+    if(typeFile === 'image/jpeg' || typeFile === 'image/png'  ){
+      console.log('img')
+      if(sizeFile <= 1048576){
+  
+        if (event.target.files && event.target.files[0]) {
+          var reader = new FileReader();
+          this.imagePath = event.target.files;
+          reader.readAsDataURL(event.target.files[0]); // read file as data url
+          reader.onload = (event) => { // called once readAsDataURL is completed
+      
+              this.sliderEdit.imagen  = (reader.result)+''; //add source to image
+          }
+        }
+
+      }else{
+
+        this._toasterService.Error('La imagen sobrepasa el tamaño maximo !!');
+      }
+
+
+
+    }
+
+  }
+
+  selectedFile = null;
 
 
 
