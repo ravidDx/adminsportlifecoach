@@ -41537,7 +41537,7 @@ var RutinasComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".total{\r\n    font-family: cursive;\r\n    font-size: 5rem;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0JBQW9CO0lBQ3BCLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9kYXNoYm9hcmQvZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudG90YWx7XHJcbiAgICBmb250LWZhbWlseTogY3Vyc2l2ZTtcclxuICAgIGZvbnQtc2l6ZTogNXJlbTtcclxufVxyXG4iXX0= */"
 
 /***/ }),
 
@@ -41548,7 +41548,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-warning card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">content_copy</i>\r\n                      </div>\r\n                      <p class=\"card-category\">Used Space</p>\r\n                      <h3 class=\"card-title\">49/50\r\n                          <small>GB</small>\r\n                      </h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons text-danger\">warning</i>\r\n                          <a href=\"#pablo\">Get More Space...</a>\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-success card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">store</i>\r\n                      </div>\r\n                      <p class=\"card-category\">Revenue</p>\r\n                      <h3 class=\"card-title\">$34,245</h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">date_range</i> Last 24 Hours\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-danger card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">info_outline</i>\r\n                      </div>\r\n                      <p class=\"card-category\">Fixed Issues</p>\r\n                      <h3 class=\"card-title\">75</h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">local_offer</i> Tracked from Github\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-info card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"fa fa-twitter\"></i>\r\n                      </div>\r\n                      <p class=\"card-category\">Followers</p>\r\n                      <h3 class=\"card-title\">+245</h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">update</i> Just Updated\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"row\">\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-success\">\r\n                      <div class=\"ct-chart\" id=\"dailySalesChart\"></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Daily Sales</h4>\r\n                      <p class=\"card-category\">\r\n                          <span class=\"text-success\"><i class=\"fa fa-long-arrow-up\"></i> 55% </span> increase in today sales.</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> updated 4 minutes ago\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-warning\">\r\n                      <div class=\"ct-chart\" id=\"websiteViewsChart\"></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Email Subscriptions</h4>\r\n                      <p class=\"card-category\">Last Campaign Performance</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> campaign sent 2 days ago\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-danger\">\r\n                      <div class=\"ct-chart\" id=\"completedTasksChart\"></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Completed Tasks</h4>\r\n                      <p class=\"card-category\">Last Campaign Performance</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> campaign sent 2 days ago\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-6 col-md-12\">\r\n              <div class=\"card\">\r\n                  <div class=\"card-header card-header-tabs card-header-primary\">\r\n                      <div class=\"nav-tabs-navigation\">\r\n                          <div class=\"nav-tabs-wrapper\">\r\n                              <span class=\"nav-tabs-title\">Tasks:</span>\r\n                              <ul class=\"nav nav-tabs\" data-tabs=\"tabs\">\r\n                                  <li class=\"nav-item\">\r\n                                      <a mat-button class=\"nav-link active\" href=\"#profile\" data-toggle=\"tab\">\r\n                                          <i class=\"material-icons\">bug_report</i> Bugs\r\n                                          <div class=\"ripple-container\"></div>\r\n                                      </a>\r\n                                  </li>\r\n                                  <li class=\"nav-item\">\r\n                                      <a mat-button class=\"nav-link\" href=\"#messages\" data-toggle=\"tab\">\r\n                                          <i class=\"material-icons\">code</i> Website\r\n                                          <div class=\"ripple-container\"></div>\r\n                                      </a>\r\n                                  </li>\r\n                                  <li class=\"nav-item\">\r\n                                      <a mat-button class=\"nav-link\" href=\"#settings\" data-toggle=\"tab\">\r\n                                          <i class=\"material-icons\">cloud</i> Server\r\n                                          <div class=\"ripple-container\"></div>\r\n                                      </a>\r\n                                  </li>\r\n                              </ul>\r\n                          </div>\r\n                      </div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <div class=\"tab-content\">\r\n                          <div class=\"tab-pane active\" id=\"profile\">\r\n                              <table class=\"table\">\r\n                                  <tbody>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" checked>\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Sign contract for \"What are conference organizers afraid of?\"</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit\r\n                                          </td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" checked>\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Create 4 Invisible User Experiences you Never Knew About</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                  </tbody>\r\n                              </table>\r\n                          </div>\r\n                          <div class=\"tab-pane\" id=\"messages\">\r\n                              <table class=\"table\">\r\n                                  <tbody>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" checked>\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit\r\n                                          </td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Sign contract for \"What are conference organizers afraid of?\"</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                  </tbody>\r\n                              </table>\r\n                          </div>\r\n                          <div class=\"tab-pane\" id=\"settings\">\r\n                              <table class=\"table\">\r\n                                  <tbody>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\">\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" checked>\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit\r\n                                          </td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                      <tr>\r\n                                          <td>\r\n                                              <div class=\"form-check\">\r\n                                                  <label class=\"form-check-label\">\r\n                                                      <input class=\"form-check-input\" type=\"checkbox\" value=\"\" checked>\r\n                                                      <span class=\"form-check-sign\">\r\n                                                          <span class=\"check\"></span>\r\n                                                      </span>\r\n                                                  </label>\r\n                                              </div>\r\n                                          </td>\r\n                                          <td>Sign contract for \"What are conference organizers afraid of?\"</td>\r\n                                          <td class=\"td-actions text-right\">\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Edit Task\" [matTooltipPosition]=\"'above'\" class=\"btn btn-primary btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">edit</i>\r\n                                              </button>\r\n                                              <button mat-raised-button type=\"button\" matTooltip=\"Remove\" [matTooltipPosition]=\"'above'\" class=\"btn btn-danger btn-link btn-sm btn-just-icon\">\r\n                                                  <i class=\"material-icons\">close</i>\r\n                                              </button>\r\n                                          </td>\r\n                                      </tr>\r\n                                  </tbody>\r\n                              </table>\r\n                          </div>\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-6 col-md-12\">\r\n              <div class=\"card\">\r\n                  <div class=\"card-header card-header-warning\">\r\n                      <h4 class=\"card-title\">Employees Stats</h4>\r\n                      <p class=\"card-category\">New employees on 15th September, 2016</p>\r\n                  </div>\r\n                  <div class=\"card-body table-responsive\">\r\n                      <table class=\"table table-hover\">\r\n                          <thead class=\"text-warning\">\r\n                              <th>ID</th>\r\n                              <th>Name</th>\r\n                              <th>Salary</th>\r\n                              <th>Country</th>\r\n                          </thead>\r\n                          <tbody>\r\n                              <tr>\r\n                                  <td>1</td>\r\n                                  <td>Dakota Rice</td>\r\n                                  <td>$36,738</td>\r\n                                  <td>Niger</td>\r\n                              </tr>\r\n                              <tr>\r\n                                  <td>2</td>\r\n                                  <td>Minerva Hooper</td>\r\n                                  <td>$23,789</td>\r\n                                  <td>Curaçao</td>\r\n                              </tr>\r\n                              <tr>\r\n                                  <td>3</td>\r\n                                  <td>Sage Rodriguez</td>\r\n                                  <td>$56,142</td>\r\n                                  <td>Netherlands</td>\r\n                              </tr>\r\n                              <tr>\r\n                                  <td>4</td>\r\n                                  <td>Philip Chaney</td>\r\n                                  <td>$38,735</td>\r\n                                  <td>Korea, South</td>\r\n                              </tr>\r\n                          </tbody>\r\n                      </table>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-warning card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">people</i>\r\n                      </div>\r\n                      <p class=\"card-category\">Total Deportistas</p>\r\n                      <h3 class=\"card-title\">{{totalDeportistas}}\r\n                          \r\n                      </h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">date_range</i> Desde el 14/05/2019\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-success card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">accessibility</i>\r\n                      </div>\r\n                     \r\n                      <p class=\"card-category\">Total Ejercicios</p>\r\n                      <h3 class=\"card-title\">{{totalEjercicios}}\r\n                          \r\n                      </h3>\r\n\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">date_range</i> Desde el 14/05/2019\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-danger card-header-icon\">\r\n                      <div class=\"card-icon\">\r\n                          <i class=\"material-icons\">assignment</i>\r\n                      </div>\r\n                \r\n                      <p class=\"card-category\">Total Rutinas</p>\r\n                      <h3 class=\"card-title\">{{totalRutinas}}\r\n                          \r\n                      </h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                        <i class=\"material-icons\">date_range</i> Desde el 14/05/2019\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-lg-3 col-md-6 col-sm-6\">\r\n              <div class=\"card card-stats\">\r\n                  <div class=\"card-header card-header-info card-header-icon\">\r\n                    <div class=\"card-icon\">\r\n                        <i class=\"material-icons\">restaurant</i>\r\n                    </div>\r\n                      <p class=\"card-category\">Total Recetas</p>\r\n                      <h3 class=\"card-title\">{{totalRecetas}}</h3>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                        <i class=\"material-icons\">date_range</i> Desde el 14/05/2019\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n\r\n      \r\n\r\n      <div class=\"row\">\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-success\">\r\n                        <div><h1 class=\"total\">{{totalPersonasActivas}}</h1></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Personas Activas</h4>\r\n                      <p class=\"card-category\">\r\n                          <span class=\"text-success\"><i class=\"fa fa-long-arrow-up\"></i> 85% </span> del total.</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> actualizado hace 4 minutos\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-warning\">\r\n                          <div><h1 class=\"total\">{{totalPersonasInactivas}}</h1></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Personas Inactivas</h4>\r\n                      <p class=\"card-category\">Last Campaign Performance</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> actualizado hace 4 minutos\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"col-md-4\">\r\n              <div class=\"card card-chart\">\r\n                  <div class=\"card-header card-header-danger\">\r\n                        <div><h1 class=\"total\">2</h1></div>\r\n                  </div>\r\n                  <div class=\"card-body\">\r\n                      <h4 class=\"card-title\">Entrenamientos Completados</h4>\r\n                      <p class=\"card-category\">Last Campaign Performance</p>\r\n                  </div>\r\n                  <div class=\"card-footer\">\r\n                      <div class=\"stats\">\r\n                          <i class=\"material-icons\">access_time</i> actualizado hace 4 minutos\r\n                      </div>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  \r\n      \r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -41566,8 +41566,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/auth.service */ "./src/app/services/auth.service.ts");
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var chartist__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! chartist */ "./node_modules/chartist/dist/chartist.js");
-/* harmony import */ var chartist__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(chartist__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _services_deportista_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/deportista.service */ "./src/app/services/deportista.service.ts");
+/* harmony import */ var _services_entrenamiento_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/entrenamiento.service */ "./src/app/services/entrenamiento.service.ts");
+/* harmony import */ var _services_rutina_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/rutina.service */ "./src/app/services/rutina.service.ts");
+/* harmony import */ var _services_dieta_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../services/dieta.service */ "./src/app/services/dieta.service.ts");
+/* harmony import */ var chartist__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! chartist */ "./node_modules/chartist/dist/chartist.js");
+/* harmony import */ var chartist__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(chartist__WEBPACK_IMPORTED_MODULE_8__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41582,13 +41586,35 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 var DashboardComponent = /** @class */ (function () {
-    function DashboardComponent(router, _authService, _afsAuth) {
+    function DashboardComponent(router, _authService, _afsAuth, _deportistaService, _ejercicioService, _rutinaService, _recetaService) {
         this.router = router;
         this._authService = _authService;
         this._afsAuth = _afsAuth;
+        this._deportistaService = _deportistaService;
+        this._ejercicioService = _ejercicioService;
+        this._rutinaService = _rutinaService;
+        this._recetaService = _recetaService;
         this.fullScreen = false;
         this.isLogged = false;
+        this.deportistas = [];
+        this.ejercicios = [];
+        this.rutinas = [];
+        this.recetas = [];
+        this.totalDeportistas = '';
+        this.totalEjercicios = '';
+        this.totalRutinas = '';
+        this.totalRecetas = '';
+        this.totalPersonasActivas = 0;
+        this.totalPersonasInactivas = 0;
+        this.consultarTotalDeportistas();
+        this.consultarTotalEjercicios();
+        this.consultarTotalRecetas();
+        this.consultarTotalRutinas();
     }
     DashboardComponent.prototype.startAnimationForLineChart = function (chart) {
         var seq, delays, durations;
@@ -41603,7 +41629,7 @@ var DashboardComponent = /** @class */ (function () {
                         dur: 700,
                         from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
                         to: data.path.clone().stringify(),
-                        easing: chartist__WEBPACK_IMPORTED_MODULE_4__["Svg"].Easing.easeOutQuint
+                        easing: chartist__WEBPACK_IMPORTED_MODULE_8__["Svg"].Easing.easeOutQuint
                     }
                 });
             }
@@ -41647,69 +41673,6 @@ var DashboardComponent = /** @class */ (function () {
     ;
     DashboardComponent.prototype.ngOnInit = function () {
         this.getCurrentUser();
-        /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
-        var dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            series: [
-                [12, 17, 7, 17, 23, 18, 38]
-            ]
-        };
-        var optionsDailySalesChart = {
-            lineSmooth: chartist__WEBPACK_IMPORTED_MODULE_4__["Interpolation"].cardinal({
-                tension: 0
-            }),
-            low: 0,
-            high: 50,
-            chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
-        };
-        var dailySalesChart = new chartist__WEBPACK_IMPORTED_MODULE_4__["Line"]('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
-        this.startAnimationForLineChart(dailySalesChart);
-        /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
-        var dataCompletedTasksChart = {
-            labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
-            series: [
-                [230, 750, 450, 300, 280, 240, 200, 190]
-            ]
-        };
-        var optionsCompletedTasksChart = {
-            lineSmooth: chartist__WEBPACK_IMPORTED_MODULE_4__["Interpolation"].cardinal({
-                tension: 0
-            }),
-            low: 0,
-            high: 1000,
-            chartPadding: { top: 0, right: 0, bottom: 0, left: 0 }
-        };
-        var completedTasksChart = new chartist__WEBPACK_IMPORTED_MODULE_4__["Line"]('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
-        // start animation for the Completed Tasks Chart - Line Chart
-        this.startAnimationForLineChart(completedTasksChart);
-        /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
-        var datawebsiteViewsChart = {
-            labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-            series: [
-                [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
-            ]
-        };
-        var optionswebsiteViewsChart = {
-            axisX: {
-                showGrid: false
-            },
-            low: 0,
-            high: 1000,
-            chartPadding: { top: 0, right: 5, bottom: 0, left: 0 }
-        };
-        var responsiveOptions = [
-            ['screen and (max-width: 640px)', {
-                    seriesBarDistance: 5,
-                    axisX: {
-                        labelInterpolationFnc: function (value) {
-                            return value[0];
-                        }
-                    }
-                }]
-        ];
-        var websiteViewsChart = new chartist__WEBPACK_IMPORTED_MODULE_4__["Bar"]('#websiteViewsChart', datawebsiteViewsChart, optionswebsiteViewsChart, responsiveOptions);
-        //start animation for the Emails Subscription Chart
-        this.startAnimationForBarChart(websiteViewsChart);
     };
     DashboardComponent.prototype.getCurrentUser = function () {
         var _this = this;
@@ -41729,13 +41692,89 @@ var DashboardComponent = /** @class */ (function () {
         this._authService.logoutUser();
         this.router.navigate(['/signin']);
     };
+    DashboardComponent.prototype.consultarTotalDeportistas = function () {
+        var _this = this;
+        this.deportistas = [];
+        this._deportistaService.consultarDesportistas()
+            .subscribe(function (data) {
+            for (var key$ in data) {
+                var deportista = data[key$];
+                deportista['_id'] = key$;
+                _this.deportistas.push(deportista);
+                if (deportista.estado === 'Activo') {
+                    _this.totalPersonasActivas = _this.totalPersonasActivas + 1;
+                }
+                else {
+                    _this.totalPersonasInactivas = _this.totalPersonasInactivas + 1;
+                }
+            }
+            console.log(_this.deportistas.length);
+            _this.totalDeportistas = (_this.deportistas.length) + '';
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    DashboardComponent.prototype.consultarTotalEjercicios = function () {
+        var _this = this;
+        this.ejercicios = [];
+        this._ejercicioService.consultarEntrenamientos()
+            .subscribe(function (data) {
+            for (var key$ in data) {
+                var ejercicio = data[key$];
+                ejercicio['_id'] = key$;
+                _this.ejercicios.push(ejercicio);
+            }
+            console.log(_this.ejercicios.length);
+            _this.totalEjercicios = (_this.ejercicios.length) + '';
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    DashboardComponent.prototype.consultarTotalRutinas = function () {
+        var _this = this;
+        this.rutinas = [];
+        this._rutinaService.consultarRutinas()
+            .subscribe(function (data) {
+            for (var key$ in data) {
+                var rutina = data[key$];
+                rutina['_id'] = key$;
+                _this.rutinas.push(rutina);
+            }
+            console.log(_this.rutinas.length);
+            _this.totalRutinas = (_this.rutinas.length) + '';
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    DashboardComponent.prototype.consultarTotalRecetas = function () {
+        var _this = this;
+        this.rutinas = [];
+        this._recetaService.consultarDietas()
+            .subscribe(function (data) {
+            for (var key$ in data) {
+                var receta = data[key$];
+                receta['_id'] = key$;
+                _this.recetas.push(receta);
+            }
+            console.log(_this.recetas.length);
+            _this.totalRecetas = (_this.recetas.length) + '';
+        }, function (error) {
+            console.log(error);
+        });
+    };
     DashboardComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-dashboard',
             template: __webpack_require__(/*! ./dashboard.component.html */ "./src/app/dashboard/dashboard.component.html"),
             styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"],
+            _services_deportista_service__WEBPACK_IMPORTED_MODULE_4__["DeportistaService"],
+            _services_entrenamiento_service__WEBPACK_IMPORTED_MODULE_5__["EntrenamientoService"],
+            _services_rutina_service__WEBPACK_IMPORTED_MODULE_6__["RutinaService"],
+            _services_dieta_service__WEBPACK_IMPORTED_MODULE_7__["DietaService"]])
     ], DashboardComponent);
     return DashboardComponent;
 }());

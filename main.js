@@ -790,7 +790,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 /*sERVICIOS */
 
 var ROUTES = [
-    // { path: '/admin/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '', rol:'admin' },
+    { path: '/admin/dashboard', title: 'Dashboard', icon: 'dashboard', class: '', rol: 'admin' },
     { path: '/admin/deportista-list', title: 'Deportistas', icon: 'format_list_bulleted', class: '', rol: 'admin' },
     { path: '/admin/ejercicios', title: 'Ejercicios', icon: 'directions_run', class: '', rol: 'admin' },
     { path: '/admin/rutinas', title: 'Rutinas', icon: 'fitness_center', class: '', rol: 'admin' },
