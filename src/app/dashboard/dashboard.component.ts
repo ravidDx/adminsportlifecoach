@@ -3,6 +3,18 @@ import {AuthService} from '../services/auth.service';
 import {AngularFireAuth} from '@angular/fire/auth';
 import { Router } from "@angular/router";
 
+import {Deportista} from '../interfaces/deportista.interface';
+import {Entrenamiento} from '../interfaces/entrenamiento.interface';
+import {Rutina} from '../interfaces/rutina.interface';
+import {Dieta} from '../interfaces/dieta.interface';
+
+
+import {DeportistaService} from '../services/deportista.service';
+import {EntrenamientoService} from '../services/entrenamiento.service';
+import {RutinaService} from '../services/rutina.service';
+import {DietaService} from '../services/dieta.service';
+
+
 import * as Chartist from 'chartist';
 
 @Component({
@@ -15,7 +27,32 @@ export class DashboardComponent implements OnInit {
   fullScreen:boolean = false;
   public isLogged:boolean = false;
 
-  constructor(private router: Router,private _authService:AuthService, private _afsAuth:AngularFireAuth) { }
+  deportistas:Deportista[] =[];
+  ejercicios:Entrenamiento[] =[];
+  rutinas:Rutina[] =[];
+  recetas:Dieta[] =[];
+
+  totalDeportistas:String='';
+  totalEjercicios:String='';
+  totalRutinas:String='';
+  totalRecetas:String='';
+
+  totalPersonasActivas:any=0;
+  totalPersonasInactivas:any=0;
+
+  constructor(private router: Router,
+              private _authService:AuthService, 
+              private _afsAuth:AngularFireAuth,
+              private _deportistaService:DeportistaService,
+              private _ejercicioService:EntrenamientoService,
+              private _rutinaService:RutinaService,
+              private _recetaService:DietaService) { 
+
+    this.consultarTotalDeportistas();
+    this.consultarTotalEjercicios();
+    this.consultarTotalRecetas();
+    this.consultarTotalRutinas();
+  }
   startAnimationForLineChart(chart){
       let seq: any, delays: any, durations: any;
       seq = 0;
@@ -75,85 +112,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
 
     this.getCurrentUser();
-      /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
-      const dataDailySalesChart: any = {
-          labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-          series: [
-              [12, 17, 7, 17, 23, 18, 38]
-          ]
-      };
-
-     const optionsDailySalesChart: any = {
-          lineSmooth: Chartist.Interpolation.cardinal({
-              tension: 0
-          }),
-          low: 0,
-          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-          chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
-      }
-
-      var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
-
-      this.startAnimationForLineChart(dailySalesChart);
-
-
-      /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
-
-      const dataCompletedTasksChart: any = {
-          labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
-          series: [
-              [230, 750, 450, 300, 280, 240, 200, 190]
-          ]
-      };
-
-     const optionsCompletedTasksChart: any = {
-          lineSmooth: Chartist.Interpolation.cardinal({
-              tension: 0
-          }),
-          low: 0,
-          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-          chartPadding: { top: 0, right: 0, bottom: 0, left: 0}
-      }
-
-      var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
-
-      // start animation for the Completed Tasks Chart - Line Chart
-      this.startAnimationForLineChart(completedTasksChart);
-
-
-
-      /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
-
-      var datawebsiteViewsChart = {
-        labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-        series: [
-          [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
-
-        ]
-      };
-      var optionswebsiteViewsChart = {
-          axisX: {
-              showGrid: false
-          },
-          low: 0,
-          high: 1000,
-          chartPadding: { top: 0, right: 5, bottom: 0, left: 0}
-      };
-      var responsiveOptions: any[] = [
-        ['screen and (max-width: 640px)', {
-          seriesBarDistance: 5,
-          axisX: {
-            labelInterpolationFnc: function (value) {
-              return value[0];
-            }
-          }
-        }]
-      ];
-      var websiteViewsChart = new Chartist.Bar('#websiteViewsChart', datawebsiteViewsChart, optionswebsiteViewsChart, responsiveOptions);
-
-      //start animation for the Emails Subscription Chart
-      this.startAnimationForBarChart(websiteViewsChart);
   }
 
 
@@ -179,5 +138,121 @@ export class DashboardComponent implements OnInit {
    
   }
 
+
+  consultarTotalDeportistas(){
+    this.deportistas=[];
+    this._deportistaService.consultarDesportistas()
+      .subscribe(
+        data=>{
+
+          
+          for(let key$ in data){
+	  				let deportista = data[key$];
+	  				deportista['_id']=key$;
+            this.deportistas.push(deportista);
+
+            if(deportista.estado=== 'Activo'){
+              this.totalPersonasActivas=this.totalPersonasActivas+1;
+            }else{
+              this.totalPersonasInactivas=this.totalPersonasInactivas+1;
+            }
+            
+          }
+          console.log(this.deportistas.length)
+
+          this.totalDeportistas = (this.deportistas.length)+'';
+        
+     
+                 
+        },
+        error=>{
+          console.log(error);
+        }
+
+      );
+
+  }
+
+
+  consultarTotalEjercicios(){
+    this.ejercicios=[];
+    this._ejercicioService.consultarEntrenamientos()
+      .subscribe(
+        data=>{
+
+          
+          for(let key$ in data){
+	  				let ejercicio = data[key$];
+	  				ejercicio['_id']=key$;
+	  				this.ejercicios.push(ejercicio);
+          }
+          console.log(this.ejercicios.length)
+
+          this.totalEjercicios = (this.ejercicios.length)+'';
+        
+     
+                 
+        },
+        error=>{
+          console.log(error);
+        }
+
+      );
+
+  }
+
+  consultarTotalRutinas(){
+    this.rutinas=[];
+    this._rutinaService.consultarRutinas()
+      .subscribe(
+        data=>{
+
+          
+          for(let key$ in data){
+	  				let rutina = data[key$];
+	  				rutina['_id']=key$;
+	  				this.rutinas.push(rutina);
+          }
+          console.log(this.rutinas.length)
+
+          this.totalRutinas = (this.rutinas.length)+'';
+        
+     
+                 
+        },
+        error=>{
+          console.log(error);
+        }
+
+      );
+
+  }
+
+  consultarTotalRecetas(){
+    this.rutinas=[];
+    this._recetaService.consultarDietas()
+      .subscribe(
+        data=>{
+
+          
+          for(let key$ in data){
+	  				let receta = data[key$];
+	  				receta['_id']=key$;
+	  				this.recetas.push(receta);
+          }
+          console.log(this.recetas.length)
+
+          this.totalRecetas = (this.recetas.length)+'';
+        
+     
+                 
+        },
+        error=>{
+          console.log(error);
+        }
+
+      );
+
+  }
 
 }

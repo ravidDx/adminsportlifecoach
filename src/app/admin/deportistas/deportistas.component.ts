@@ -271,6 +271,7 @@ export class DeportistasComponent implements OnInit {
 
   }
 
+  
   listar(){
     this.deportistas=[];
     this._deportistaService.consultarDesportistas()
